@@ -1,5 +1,7 @@
 import colecoes.Colecoes
+import heranca.Heranca
 
 fun main() {
-    Colecoes().run()
+    Colecoes().iniciar()
+    Heranca().iniciar()
 }

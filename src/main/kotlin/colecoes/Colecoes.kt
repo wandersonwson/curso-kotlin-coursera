@@ -1,10 +1,10 @@
 package colecoes
 
 class Colecoes() {
-    private var alunos: List<Aluno>
+    private val alunos: List<Aluno>
 
     init {
-        alunos = mutableListOf(
+        alunos = listOf(
             Aluno("Carlos Alberto", Genero.M, 3.5),
             Aluno("Maria Rita", Genero.F, 5.5),
             Aluno("Pedro Augusto", Genero.M, 10.0),
@@ -22,7 +22,7 @@ class Colecoes() {
             Aluno("Priscila Salgado", Genero.F, 3.8)
         )
     }
-    fun run() {
+    fun iniciar() {
         println("--- Curso Kotlin for Java Developers: Coleções ---")
         listarAlunos()
         somarNotasPorGenero()
@@ -60,20 +60,20 @@ class Colecoes() {
     }
     private fun somarNotasPorGenero() {
         println("Soma das notas por gênero:")
-        var somaFeminina = alunos.filter { it.genero == Genero.F }
+        val somaFeminina = alunos.filter { it.genero == Genero.F }
             .sumOf { it.media }
         println("Soma feminina: $somaFeminina")
-        var somaMasculina = alunos.filter { it.genero == Genero.M }
+        val somaMasculina = alunos.filter { it.genero == Genero.M }
             .sumOf { it.media }
         println("Soma masculina: $somaMasculina")
     }
     private fun calcularMediaPorGenero() {
         println("Média das notas por gênero:")
-        var mediaFeminina = alunos.filter { it.genero == Genero.F }
+        val mediaFeminina = alunos.filter { it.genero == Genero.F }
             .map(Aluno::media)
             .average()
         println("Média feminina: $mediaFeminina")
-        var mediaMasculina = alunos.filter { it.genero == Genero.M }
+        val mediaMasculina = alunos.filter { it.genero == Genero.M }
             .map(Aluno::media)
             .average()
         println("Média masculina: $mediaMasculina")

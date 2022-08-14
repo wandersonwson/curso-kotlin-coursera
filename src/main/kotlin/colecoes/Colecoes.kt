@@ -1,27 +1,23 @@
 package colecoes
 
-class Colecoes() {
-    private val alunos: List<Aluno>
-
-    init {
-        alunos = listOf(
-            Aluno("Carlos Alberto", Genero.M, 3.5),
-            Aluno("Maria Rita", Genero.F, 5.5),
-            Aluno("Pedro Augusto", Genero.M, 10.0),
-            Aluno("Júlia Anchieta", Genero.F, 7.8),
-            Aluno("Felipe Rocha", Genero.M, 4.0),
-            Aluno("Talita Pereira", Genero.F, 9.2),
-            Aluno("Marcos Silva", Genero.M, 8.9),
-            Aluno("Fabiola Nogueira", Genero.F, 4.5),
-            Aluno("Silvero Teixeira", Genero.F, 8.4),
-            Aluno("Linda Oliveira", Genero.M, 10.0),
-            Aluno("Carol Chaves", Genero.F, 8.3),
-            Aluno("Juliano Ávila", Genero.M, 4.8),
-            Aluno("Tatiana Junqueira", Genero.F, 10.0),
-            Aluno("Ricardo Moraes", Genero.M, 6.5),
-            Aluno("Priscila Salgado", Genero.F, 3.8)
-        )
-    }
+class Colecoes {
+    private val alunos: List<Aluno> = listOf(
+        Aluno("Carlos Alberto", Genero.M, 3.5),
+        Aluno("Maria Rita", Genero.F, 5.5),
+        Aluno("Pedro Augusto", Genero.M, 10.0),
+        Aluno("Júlia Anchieta", Genero.F, 7.8),
+        Aluno("Felipe Rocha", Genero.M, 4.0),
+        Aluno("Talita Pereira", Genero.F, 9.2),
+        Aluno("Marcos Silva", Genero.M, 8.9),
+        Aluno("Fabiola Nogueira", Genero.F, 4.5),
+        Aluno("Silvero Teixeira", Genero.F, 8.4),
+        Aluno("Linda Oliveira", Genero.M, 10.0),
+        Aluno("Carol Chaves", Genero.F, 8.3),
+        Aluno("Juliano Ávila", Genero.M, 4.8),
+        Aluno("Tatiana Junqueira", Genero.F, 10.0),
+        Aluno("Ricardo Moraes", Genero.M, 6.5),
+        Aluno("Priscila Salgado", Genero.F, 3.8)
+    )
     fun iniciar() {
         println("--- Curso Kotlin for Java Developers: Coleções ---")
         listarAlunos()
